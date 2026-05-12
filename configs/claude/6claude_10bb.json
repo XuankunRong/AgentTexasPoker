@@ -1,0 +1,64 @@
+{
+  "experiment": {
+    "id": "experiment1",
+    "mode": "independent_hands",
+    "description": "Independent-hand risk personality evaluation on a 6-max table"
+  },
+  "hands": 1000,
+  "table": {
+    "starting_stack": 1000,
+    "small_blind": 5,
+    "big_blind": 10,
+    "max_raises_per_street": 3
+  },
+  "players": [
+    {
+      "name": "player1",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://ai.soruxgpt.com/v1",
+      "model": "claude-sonnet-4-6",
+      "api_key_env": "SORUXGPT_API_KEY_CLAUDE"
+    },
+    {
+      "name": "player2",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://ai.soruxgpt.com/v1",
+      "model": "claude-sonnet-4-6",
+      "api_key_env": "SORUXGPT_API_KEY_CLAUDE"
+    },
+    {
+      "name": "player3",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://ai.soruxgpt.com/v1",
+      "model": "claude-sonnet-4-6",
+      "api_key_env": "SORUXGPT_API_KEY_CLAUDE"
+    },
+    {
+      "name": "player4",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://ai.soruxgpt.com/v1",
+      "model": "claude-sonnet-4-6",
+      "api_key_env": "SORUXGPT_API_KEY_CLAUDE"
+    },
+    {
+      "name": "player5",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://ai.soruxgpt.com/v1",
+      "model": "claude-sonnet-4-6",
+      "api_key_env": "SORUXGPT_API_KEY_CLAUDE"
+    },
+    {
+      "name": "player6",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://ai.soruxgpt.com/v1",
+      "model": "claude-sonnet-4-6",
+      "api_key_env": "SORUXGPT_API_KEY_CLAUDE"
+    }
+  ]
+}

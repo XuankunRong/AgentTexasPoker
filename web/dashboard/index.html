@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Texas Holdem Live Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Texas Holdem Live Dashboard</h1>
+        <p id="statusText">等待连接日志流...</p>
+      </div>
+      <div class="controls">
+        <label for="runSelect">Run</label>
+        <select id="runSelect"></select>
+        <button id="refreshRunsBtn" type="button">刷新</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel table-panel">
+        <h2>牌桌状态</h2>
+        <div class="table-meta">
+          <div id="handMeta">Hand: -</div>
+          <div id="blindMeta">Blinds: -</div>
+          <div id="streetMeta">Street: -</div>
+          <div id="potMeta">Pot: -</div>
+        </div>
+        <div id="boardCards" class="board-cards"></div>
+        <div id="seatsGrid" class="seats-grid"></div>
+      </section>
+
+      <section class="panel action-panel">
+        <h2>实时操作</h2>
+        <div id="actionFeed" class="action-feed"></div>
+      </section>
+
+      <section class="panel hands-panel">
+        <h2>对局记录</h2>
+        <div id="handsList" class="hands-list"></div>
+      </section>
+
+      <section class="panel metrics-panel">
+        <h2>风险指标</h2>
+        <div id="metricsMeta" class="metrics-meta">尚无指标</div>
+        <div id="metricsTable" class="metrics-table"></div>
+        <h2 class="subhead">Retry 分类</h2>
+        <div id="retryMeta" class="metrics-meta">尚无重试统计</div>
+        <div id="retryTable" class="metrics-table"></div>
+      </section>
+
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

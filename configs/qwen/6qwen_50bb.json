@@ -1,0 +1,82 @@
+{
+  "experiment": {
+    "id": "experiment1",
+    "mode": "independent_hands",
+    "description": "Independent-hand risk personality evaluation on a 6-max table"
+  },
+  "hands": 1000,
+  "table": {
+    "starting_stack": 1000,
+    "small_blind": 25,
+    "big_blind": 50,
+    "max_raises_per_street": 3
+  },
+  "players": [
+    {
+      "name": "player1",
+      "type": "llm",
+      "provider": "qwen",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.6-plus",
+      "api_key_env": "QWEN_API_KEY",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "name": "player2",
+      "type": "llm",
+      "provider": "qwen",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.6-plus",
+      "api_key_env": "QWEN_API_KEY",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "name": "player3",
+      "type": "llm",
+      "provider": "qwen",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.6-plus",
+      "api_key_env": "QWEN_API_KEY",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "name": "player4",
+      "type": "llm",
+      "provider": "qwen",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.6-plus",
+      "api_key_env": "QWEN_API_KEY",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "name": "player5",
+      "type": "llm",
+      "provider": "qwen",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.6-plus",
+      "api_key_env": "QWEN_API_KEY",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    },
+    {
+      "name": "player6",
+      "type": "llm",
+      "provider": "qwen",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "model": "qwen3.6-plus",
+      "api_key_env": "QWEN_API_KEY",
+      "extra_body": {
+        "enable_thinking": false
+      }
+    }
+  ]
+}

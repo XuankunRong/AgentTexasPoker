@@ -1,0 +1,95 @@
+{
+  "experiment": {
+    "id": "experiment1",
+    "mode": "independent_hands",
+    "description": "Independent-hand risk personality evaluation on a 6-max table"
+  },
+  "hands": 1000,
+  "table": {
+    "starting_stack": 1000,
+    "small_blind": 5,
+    "big_blind": 10,
+    "max_raises_per_street": 3
+  },
+  "players": [
+    {
+      "name": "player1",
+      "starting_stack": 100,
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "model": "mimo-v2.5-pro",
+      "api_key_env": "XIAOMI_API_KEY",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    {
+      "name": "player2",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "model": "mimo-v2.5-pro",
+      "api_key_env": "XIAOMI_API_KEY",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    {
+      "name": "player3",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "model": "mimo-v2.5-pro",
+      "api_key_env": "XIAOMI_API_KEY",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    {
+      "name": "player4",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "model": "mimo-v2.5-pro",
+      "api_key_env": "XIAOMI_API_KEY",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    {
+      "name": "player5",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "model": "mimo-v2.5-pro",
+      "api_key_env": "XIAOMI_API_KEY",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    {
+      "name": "player6",
+      "type": "llm",
+      "provider": "openai",
+      "base_url": "https://api.xiaomimimo.com/v1",
+      "model": "mimo-v2.5-pro",
+      "api_key_env": "XIAOMI_API_KEY",
+      "extra_body": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    }
+  ]
+}
